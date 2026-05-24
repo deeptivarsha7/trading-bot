@@ -1,0 +1,49 @@
+2026-05-24 14:11:24 | INFO     | orders             | Placing MARKET BUY | symbol=BTCUSDT qty=0.01
+2026-05-24 14:11:24 | DEBUG    | client             | >> POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1779612084675, 'signature': '***'}
+2026-05-24 14:11:25 | DEBUG    | client             | << HTTP 200  body={"orderId":13186739921,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"3eo6IZBJPZBa4xam0H8toW","price":"0.00","avgPrice":"0.00","origQty":"0.0100","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1779612085752}
+2026-05-24 14:11:25 | INFO     | orders             | MARKET order accepted | orderId=13186739921 status=NEW
+2026-05-24 14:11:25 | INFO     | interactive        | Done | orderId=13186739921 status=NEW
+2026-05-24 14:13:02 | ERROR    | cli                | Validation error: --price is required for LIMIT orders.
+2026-05-24 14:13:09 | ERROR    | cli                | Validation error: --stop-price is required for STOP_MARKET orders.
+2026-05-24 14:13:15 | ERROR    | cli                | Validation error: Quantity must be a number, got 'abc'.
+2026-05-24 14:13:31 | ERROR    | cli                | Validation error: Quantity must be greater than zero, got -1.0.
+2026-05-24 14:13:36 | INFO     | orders             | Placing MARKET SELL | symbol=BTCUSDT qty=0.01
+2026-05-24 14:13:36 | DEBUG    | client             | >> POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1779612216760, 'signature': '***'}
+2026-05-24 14:13:37 | DEBUG    | client             | << HTTP 200  body={"orderId":13186748335,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"ugVHNoSJJCrBMNrbdeCJPS","price":"0.00","avgPrice":"0.00","origQty":"0.0100","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1779612217815}
+2026-05-24 14:13:37 | INFO     | orders             | MARKET order accepted | orderId=13186748335 status=NEW
+2026-05-24 14:13:37 | INFO     | cli                | Done | orderId=13186748335 status=NEW
+2026-05-24 14:13:52 | INFO     | orders             | Placing LIMIT BUY | symbol=BTCUSDT qty=0.01 price=60000.0 tif=GTC
+2026-05-24 14:13:52 | DEBUG    | client             | >> POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.01, 'price': 60000.0, 'timeInForce': 'GTC', 'timestamp': 1779612232078, 'signature': '***'}
+2026-05-24 14:13:52 | DEBUG    | client             | << HTTP 200  body={"orderId":13186749318,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"Q231oqK5roFgnzArNrpUgm","price":"60000.00","avgPrice":"0.00","origQty":"0.0100","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1779612233045}
+2026-05-24 14:13:52 | INFO     | orders             | LIMIT order accepted | orderId=13186749318 status=NEW
+2026-05-24 14:13:52 | INFO     | cli                | Done | orderId=13186749318 status=NEW
+2026-05-24 14:14:02 | INFO     | orders             | Placing LIMIT BUY | symbol=BTCUSDT qty=0.01 price=60000.0 tif=IOC
+2026-05-24 14:14:02 | DEBUG    | client             | >> POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.01, 'price': 60000.0, 'timeInForce': 'IOC', 'timestamp': 1779612242853, 'signature': '***'}
+2026-05-24 14:14:04 | DEBUG    | client             | << HTTP 200  body={"orderId":13186749917,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"uc5mYAGTUwQvPftk91fXom","price":"60000.00","avgPrice":"0.00","origQty":"0.0100","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"IOC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1779612244438}
+2026-05-24 14:14:04 | INFO     | orders             | LIMIT order accepted | orderId=13186749917 status=NEW
+2026-05-24 14:14:04 | INFO     | cli                | Done | orderId=13186749917 status=NEW
+2026-05-24 14:14:11 | INFO     | orders             | Placing STOP_MARKET SELL | symbol=BTCUSDT qty=0.01 stopPrice=61000.0
+2026-05-24 14:14:11 | DEBUG    | client             | >> POST /fapi/v1/algoOrder  params={'algoType': 'CONDITIONAL', 'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': 0.01, 'triggerPrice': 61000.0, 'timestamp': 1779612251164, 'signature': '***'}
+2026-05-24 14:14:11 | DEBUG    | client             | << HTTP 200  body={"algoId":1000000084074534,"clientAlgoId":"ZJEYtu1MlT12NHRReWwJ0j","algoType":"CONDITIONAL","orderType":"STOP_MARKET","symbol":"BTCUSDT","side":"SELL","positionSide":"BOTH","timeInForce":"GTC","quantity":"0.0100","algoStatus":"NEW","triggerPrice":"61000.00","price":"0.00","icebergQuantity":null,"selfTradePreventionMode":"EXPIRE_MAKER","workingType":"CONTRACT_PRICE","priceMatch":"NONE","closePosition":false,"priceProtect":false,"reduceOnly":false,"createTime":1779612252069,"updateTime":1779612252069,"triggerTime":0,"goodTillDate":0}
+2026-05-24 14:14:11 | INFO     | orders             | STOP_MARKET order accepted | algoId=1000000084074534 status=NEW
+2026-05-24 14:14:11 | INFO     | cli                | Done | orderId=1000000084074534 status=NEW
+2026-05-24 14:14:17 | INFO     | orders             | Placing MARKET BUY | symbol=INVALIDXYZ qty=0.01
+2026-05-24 14:14:17 | DEBUG    | client             | >> POST /fapi/v1/order  params={'symbol': 'INVALIDXYZ', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1779612257948, 'signature': '***'}
+2026-05-24 14:14:18 | DEBUG    | client             | << HTTP 400  body={"code":-1121,"msg":"Invalid symbol."}
+2026-05-24 14:14:18 | ERROR    | orders             | MARKET order failed
+Traceback (most recent call last):
+  File "C:\Users\deept\Downloads\trading_bot_final\trading_bot\bot\orders.py", line 18, in place_market_order
+    response = client.place_order(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deept\Downloads\trading_bot_final\trading_bot\bot\client.py", line 114, in place_order
+    return self._request("POST", "/fapi/v1/order", params=dict(kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\deept\Downloads\trading_bot_final\trading_bot\bot\client.py", line 101, in _request
+    raise BinanceAPIError(f"[{code}] {msg}", code=code)
+bot.client.BinanceAPIError: [-1121] Invalid symbol.
+2026-05-24 14:14:18 | ERROR    | cli                | Order rejected: [-1121] Invalid symbol.
+2026-05-24 14:15:04 | INFO     | orders             | Placing LIMIT SELL | symbol=BTCUSDT qty=0.01 price=75000.0 tif=GTC
+2026-05-24 14:15:04 | DEBUG    | client             | >> POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 75000.0, 'timeInForce': 'GTC', 'timestamp': 1779612304955, 'signature': '***'}
+2026-05-24 14:15:05 | DEBUG    | client             | << HTTP 200  body={"orderId":13186753844,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"Mi0ZyJZ5M5n8HjU8Gjr2AN","price":"75000.00","avgPrice":"0.00","origQty":"0.0100","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1779612305916}
+2026-05-24 14:15:05 | INFO     | orders             | LIMIT order accepted | orderId=13186753844 status=NEW
+2026-05-24 14:15:05 | INFO     | interactive        | Done | orderId=13186753844 status=NEW
